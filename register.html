@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
     <link rel="stylesheet" href="css/form.css" />
+     <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -34,7 +35,53 @@
     </header>
 
     <main>
-      <h1>INDBERET</h1>
+      <h1>Zombie rapport - ALARM</h1>
+      <!-- <h3>Hjælp os med at kortlægge invasionen!</h3> -->
+
+      <form>
+        <label for="navn"> Navn</label>
+        <input type="text" id="navn" name="navn"></input>
+
+       <label for="lokation"> Hvor hørte du zombien?</label>
+       <input type="text" id="lokation" name="lokation" placeholder="By, Gade, Adresse..." required/>
+
+       <label for="lyd">Hvordan lød zombien?</label>
+       <input id="lyd" name="lyd" required>
+        <option value="">Vælg lyd</option>
+        <option> Bilalarm</option>
+        <option> Brandalarm</option>
+        <option> Vækkeur</option>
+        <option> Sirene</option>
+        <option> Andet (beskriv nedenfor)</option>
+       
+
+       <label for="detaljer">Beskriv zombien (udseende, adfærd, lyd, lydstyrke)</label>
+       <textarea name="detaljer" id="detaljer " rows="4" placeholder="Går langsomt, iført nattøj, lyder som et vækkeur..."></textarea>
+
+       <label for="nødsituation">Hvor akut er situationen?</label>
+       <div class="radio-gruppe">
+
+        <div class="radio-valg">
+          <input type="radio" id="1" name="valg" value="1"/>
+          <label for="1">Bare lidt skræmmende</label>
+        </div>
+
+        <div class="radio-valg">
+          <input type="radio" id="2" name="valg" value="2"/>
+          <label for="2">Der er mange!</label>
+        </div>
+
+        <div class="radio-valg">
+          <input type="radio" id="3" name="valg" value="3"/>
+          <label for="3">LØB FOR LIVET!!!</label>
+        </div>
+
+       </div>
+      
+
+       <button type="submit">Indsend rapport</button>
+      </form>
+
       <section id="form-section">
         <article id="form-info">
           <h2>Overskrift</h2>
@@ -49,6 +96,7 @@
         </article>
       </section>
     </main>
+
     <footer>
       <nav class="some">
         <ul>
