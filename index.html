@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
     <link rel="stylesheet" href="css/forms.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -19,12 +20,30 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html">
+            <svg
+              width="197"
+              height="188"
+              viewBox="0 0 197 188"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 163.59L2.95613 147.184L74.7729 33.1233L28.7368 16.6712L30.5109 0L119 22.4183L118.086 48.7094L24.387 149.449L99.0994 157.309L96.6453 182.999L0 163.59Z"
+                fill="black"
+              />
+              <path
+                d="M105.556 187.609L85.3425 186.386L109.21 15.753L157.697 13.4002L196.648 172.306L179.029 178.315L161.953 138.635L109.431 150.824L105.556 187.609ZM156.507 125.965L122.097 45.8811L120.504 46.0827L111.467 131.158L156.507 125.965Z"
+                fill="black"
+              />
+            </svg>
+          </a>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
           <li><a class="menuItem" href="register.html">Indberet</a></li>
         </ul>
+        <button class="menuItem" id="toggle">dark mode</button>
         <button class="burger">
           <span class="line"></span>
           <span class="line"></span>
@@ -34,56 +53,104 @@
     </header>
     <section id="main-disclamer">
       <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
+        <img id="icon" src="img/Alarm.png" alt="ICON" />
         <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
+          <h1>
+            BREAKING NEWS: ZOMBIEALARM UDLYST – BORGMESTEREN OPFORDRER TIL RO
+          </h1>
+          <p class="sub">
+            “Eksperter: ‘De er ikke farlige – bare forfærdeligt højlydte.’”
+          </p>
         </div>
       </div>
     </section>
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/zombierpågaden.png" alt="teaser_img" />
           <div class="daily_text">
             <h2>Teaser</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              Hvad gør man, hvis man har været i kontakt med en alarm-zombie?
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <details>
+              <summary popovertarget="pop01" class="cta_btn">Se mere</summary>
+              <ul>
+                <li>
+                  1. Træk dig til et roligt område Alarm-zombier går ofte i stå,
+                  når de ikke længere har nogen “publikumseffekt”. Fjern dig
+                  roligt og uden panik.
+                </li>
+                <li>
+                  2. Ryst støjen af Hvis zombien har bip- eller sirene-rester
+                  hængende i tøjet (det sker!), ryst det af som støv. Lydene
+                  sætter sig ikke fast.
+                </li>
+                <li>
+                  3. Tjek dig selv for “alarm-aktivering” Hvis du pludselig
+                  begynder at sige bip, wupwup, wee-wee, eller føler trang til
+                  at gå i ring: – det er normalt. Det er bare chokreaktion. Det
+                  går over på 30 sekunder.
+                </li>
+                <li>
+                  4. Rapportér hændelsen (fiktivt) Meld episoden til de lokale
+                  “ZombiObservatører”, så de kan notere typen: sirene, vækkeur,
+                  bilalarm eller tyve-alarm.
+                </li>
+                <li>
+                  5. Tag en pause Alarm-zombie-kontakt kan være stressende. Drik
+                  et glas vand, træk vejret, og undgå høje lyde et øjeblik.
+                </li>
+              </ul>
+              <p>
+                <strong>Læs mere om nærkontakt med en alarm zombie</strong>
+              </p>
+            </details>
           </div>
         </article>
+
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/gemjer.png" alt="teaser_img" />
           <div class="daily_text">
             <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <p>Har du set en zombie? Indberet det hurtigst muligt!</p>
+            <details>
+              <summary popovertarget="pop01" class="cta_btn">Se mere</summary>
+              <p>
+                Myndighederne minder alle borgere om, at enhver observation af
+                en alarm-zombie skal indberettes i den officielle webformular
+                med det samme. Oplysningerne er afgørende for, at beredskabet
+                hurtigt kan lokalisere, spore og indfange alle typer af
+                alarm-zombier, før de spreder mere uro i gaderne. Jo hurtigere
+                borgerne udfylder formularen, desto hurtigere kan beredskabet
+                sende et hold ud for at håndtere situationen skånsomt og
+                effektivt.
+              </p>
+            </details>
           </div>
         </article>
       </section>
+
       <section id="breaking">
         <article class="news_card">
           <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <p>OFFICIEL RANGERING: BYENS ALARM-ZOMBIER</p>
+          <img src="img/alarmzombie liste.png" alt="news_img" />
+          <button popovertarget="pop01" class="cta_btn">Se mere</button>
         </article>
+
         <article class="news_card">
           <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <p>BYEN SLÅR REKORD I KREATIVE LØSNINGER</p>
+          <img src="img/zombie slukkere.png" alt="news_img" />
+          <button popovertarget="pop02" class="cta_btn">Se mere</button>
         </article>
+
         <article class="news_card">
           <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <p>VÆKKEUR-ZOMBIER” SNOOZER SIG FRI</p>
+          <img src="img/vækkeur zombie.png" alt="news_img" />
+          <button popovertarget="pop03" class="cta_btn">Se mere</button>
         </article>
       </section>
     </main>
@@ -114,7 +181,105 @@
         </ul>
       </nav>
     </footer>
+
+    <article popover id="pop01" class="popover-card">
+      <p>
+        <strong
+          >København,<time datetime="2025-11-11"
+            >11. November 2025</time
+          ></strong
+        >
+      </p>
+      <ul>
+        <li>
+          1. Sirenezombie Lyd: Hylende politisirene Hastighed: Hurtig! Løber
+          rundt i cirkler uden mål og retning. Slukningsmetode: Ét enkelt,
+          velplaceret bonk med et blødt redskab. Adfærd: Hyperaktiv, nem at
+          spotte, svær at ramme
+        </li>
+        <li>
+          2. Vækkeur-zombie Lyd: Klassisk BIP-BIP-BIP! Hastighed: Meget langsom
+          – nærmest søvngænger. Slukningsmetode: Flere bonks i træk, ellers går
+          den i snooze og starter igen Adfærd: Snubler rundt, virker konstant
+          halvsovende, men ekstremt irriterende
+        </li>
+        <li>
+          3. Bilalarm-zombie Lyd: Den fulde bilalarm-rutine:
+          WEEOO–WEEOO–BIP–HUP–HUP Hastighed: Står helt stille som en parkeret
+          bil. Slukningsmetode: Ét roligt bonk på toppen – den vælter stille om
+          og slukker. Adfærd: Vibrerer let, men flytter sig aldrig
+        </li>
+        <li>
+          4. Brandmandszombie Lyd: Dyb, rungende røgdykker-alarm Hastighed: Støt
+          og rask gang – marchtempo. Slukningsmetode: To bonks: ét for at stoppe
+          advarselslyden og ét for at slukke slut-bip. Adfærd: Går målrettet som
+          om den stadig er på udrykning
+        </li>
+        <li>
+          5. Indbrudsalarm-zombie (“Tyve-zombien”) Lyd: Høj, pulserende
+          WEE-WEE-WEE! med blink-agtig rytme. Hastighed: Mellem-hurtig, men især
+          god til at gemme sig. Slukningsmetode: Ét bonk, men først skal man
+          finde den. Adfærd: Pjasker rundt i skygger, gemmer sig bag
+          skraldespande og under altaner
+        </li>
+      </ul>
+    </article>
+
+    <article popover id="pop02" class="popover-card">
+      <p>
+        <strong
+          >BREAKING: “VÆKKEUR-ZOMBIER” SNOOZER SIG FRI – KRÆVER FLERE BONKS FOR
+          AT SLUKKE</strong
+        >
+      </p>
+      <p>
+        København – Byens borgere advares nu om en ny type larme-zombie, der har
+        skabt kaos i morgentrafikken: de såkaldte “vækkeur-zombier”. Ifølge
+        Beredskabsstyrelsen er disse modeller udstyret med en særlig alarmchip,
+        der – præcis som et almindeligt vækkeur – automatisk går i
+        snooze-tilstand, hvis den kun får et enkelt bonk. “Folk troede, de havde
+        slukket dem, men ti sekunder senere begynder de BIP-BIP-BIP! igen,”
+        fortæller talsmand Anders Møller, der beskriver det som “den mest
+        irriterende variant hidtil”. Eksperter anbefaler derfor, at borgerne
+        fortsætter den skånsomme metode med flere bløde bonks i træk, indtil
+        zombien siger sin karakteristiske afsluttende lyd: “bip… boop… sluuuk.”
+        De populære hjemmebyggede redskaber – som skumgummihamre, pool-nudler og
+        pudeslagere – fungerer stadig, men kræver nu “et par ekstra puf for at
+        være sikre”. Borgere opfordres dog fortsat til at holde sig rolige: “De
+        vil ikke noget ondt,” understreger Møller. “De prøver bare at vække hele
+        byen klokken seks om morgenen.” Myndighederne forventer at udsende en
+        officiel “anti-snooze-guide” senere i dag.
+      </p>
+    </article>
+
+    <article popover id="pop03" class="popover-card">
+      <p>
+        <strong
+          >BREAKING: “VÆKKEUR-ZOMBIER” SNOOZER SIG FRI - KRÆVER FLERE BONKS FOR
+          AT SLUKKE</strong
+        >
+      </p>
+      <p>
+        København - Byens borgere advares nu om en ny type larme-zombie, der har
+        skabt kaos i morgentrafikken: de såkaldte “vækkeur-zombier”. Ifølge
+        Beredskabsstyrelsen er disse modeller udstyret med en særlig alarmchip,
+        der - præcis som et almindeligt vækkeur - automatisk går i
+        snooze-tilstand, hvis den kun får et enkelt bonk. “Folk troede, de havde
+        slukket dem, men ti sekunder senere begynder de BIP-BIP-BIP! igen,”
+        fortæller talsmand Anders Møller, der beskriver det som “den mest
+        irriterende variant hidtil”. Eksperter anbefaler derfor, at borgerne
+        fortsætter den skånsomme metode med flere bløde bonks i træk, indtil
+        zombien siger sin karakteristiske afsluttende lyd: “bip… boop… sluuuk.”
+        De populære hjemmebyggede redskaber - som skumgummihamre, pool-nudler og
+        pudeslagere - fungerer stadig, men kræver nu “et par ekstra puf for at
+        være sikre”. Borgere opfordres dog fortsat til at holde sig rolige: “De
+        vil ikke noget ondt,” understreger Møller. “De prøver bare at vække hele
+        byen klokken seks om morgenen.” Myndighederne forventer at udsende en
+        officiel “anti-snooze-guide” senere i dag.
+      </p>
+    </article>
+
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
   </body>
 </html>

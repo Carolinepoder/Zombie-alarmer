@@ -1,0 +1,17 @@
+article [popover]::backdrop {
+  backdrop-filter: blur(40px);
+  background-color: rgba(0, 0, 0, 0.663);
+}
+
+[popover] {
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#pop01 p {
+  margin-block: 1rem;
+  line-height: 1.6;
+}

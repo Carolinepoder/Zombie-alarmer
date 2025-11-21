@@ -1,7 +1,12 @@
 html {
+  color-scheme: light;
   font-family: var(--font-family-sans);
   color: var(--color-text);
   background-color: var(--color-bg);
+}
+
+html.dark {
+  color-scheme: dark;
 }
 
 header {
@@ -32,6 +37,7 @@ main section {
 h1 {
   font-size: var(--font-h1-size);
   font-weight: var(--font-weight-bold);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: var(--color-text-inverted);
   margin: 5px 0;
   line-height: 1.3rem;
@@ -57,22 +63,29 @@ h1 {
   font-size: var(--font-sub1-size);
   font-weight: var(--font-weight-light);
   color: var(--color-text-inverted);
+  font-size: large;
 }
 
 h2 {
   font-size: var(--headline2-size);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
+    "Lucida Sans", Arial, sans-serif;
   font-size: var(--headline3-size);
 }
 
-main>h1 {
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+main > h1 {
   width: calc(80% - 6rem);
 }
 
-/* NAVIGATION STRUCTURES */
-header>nav {
+header > nav {
   height: 100%;
   background-color: var(--color-menu-bg);
 }
@@ -82,7 +95,7 @@ nav ul {
 }
 
 a {
-  font-family: var(--font-family-sans);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 nav a {
@@ -90,7 +103,6 @@ nav a {
   color: var(--color-text);
 }
 
-/* Måske skal du lave en ny regel for logotype-wrapper, når du har lavet din logotype */
 #logotype-wrapper {
   background-color: var(--color-logotype-bg);
   display: flex;
@@ -99,7 +111,7 @@ nav a {
   height: 3.6rem;
 }
 
-#logotype-wrapper>a {
+#logotype-wrapper > a {
   color: var(--color-text-logotype);
   font-size: var(--font-logotype-size);
   font-weight: var(--font-weight-medium);
@@ -107,7 +119,6 @@ nav a {
   margin-left: 1rem;
 }
 
-/* Global menu */
 header nav li a {
   margin: 1.5rem;
   background-color: var(--color-link-bg);
@@ -118,7 +129,7 @@ header nav li a {
 }
 
 /* Pilen efter menu-tekst */
-header>nav li>a:after {
+header > nav li > a:after {
   content: " \2192";
 }
 
@@ -131,7 +142,26 @@ nav a:active {
   background-color: var(--color-link-active);
 }
 
+.zombieknap {
+  display: flex;
+  justify-items: center;
+}
+
+.hotspot {
+  display: none;
+}
+
 /* FOOTER */
 footer a {
   font-size: 0.7rem;
+}
+
+#logotype-wrapper svg {
+  width: 60px;
+  height: 100%;
+}
+
+#icon {
+  width: 100px;
+  height: 100%;
 }
