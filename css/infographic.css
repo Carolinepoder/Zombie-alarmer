@@ -40,3 +40,38 @@
 .info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
 }
+
+#Hjernehotspot,
+#Håndhotspot,
+#Mundhotspot {
+  display: inline-block;
+  margin-right: 1rem;
+  vertical-align: top;
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+#Hjernehotspot,
+#Håndhotspot,
+#Mundhotspot {
+  padding: 10px 20px;
+  background-color: #4f4949;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#Hjernehotspot:hover,
+#Håndhotspot:hover,
+#Mundhotspot:hover {
+  background-color: #75756d;
+  transform: translate(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta_btn {
+  display: flex;
+  justify-content: space-between;
+}

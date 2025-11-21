@@ -1,21 +1,21 @@
 :root {
   /* Colours */
-  --color-bg: #505050; /* page background /*
+  --color-bg: light-dark(#b3b3b3, #5f5f5f); /* page background /*
 
   /* Header */
-  --color-head-bg: #9bd770;
+  --color-head-bg: light-dark(#00ff66, #414143);
 
   /* Logotype */
-  --color-logotype-bg: #f5f5f5;
-  --color-text-logotype: #c1bfb8;
-  --font-logotype-size: 1rem;
+  --color-logotype-bg: light-dark(#c9c2c2, #605c5c);
+  --color-text-logotype: light-dark(#c1bfb8, #9f9898);
+  --font-logotype-size: 4rem;
 
   /* Global menu */
-  --color-menu-bg: #f5f5f5;
+  --color-menu-bg: light-dark(#4b4545, #c9c2c2);
   /* Links */
-  --color-link-bg: #7e57c2;
-  --color-link-hover: #fff; /* used */
-  --color-link-active: #99958f; /* used */
+  --color-link-bg: light-dark(#00ff66, #00ff66);
+  --color-link-hover: light-dark(#3a3a3a, #c9c2c2); /* used */
+  --color-link-active: light-dark(#99958f, #c9c2c2); /* used */
   --border-radius-links: 1px;
 
   /* Headlines og rubrik */
@@ -23,12 +23,12 @@
   --font-sub1-size: 1rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #4b4545;
-  --color-headline-text-page: #42413d;
+  --color-headline-bg: light-dark(#4b4545, #4b4545);
+  --color-headline-text-page: light-dark(#f2f2f2, #c9c2c2);
 
   /* Tekst */
-  --color-text: #000;
-  --color-text-inverted: #cdccc4;
+  --color-text: light-dark(#1a1a1a);
+  --color-text-inverted: light-dark(#1a1a1a);
 
   /*  Marginer */
   --margin-head-bottom: 5px;
@@ -37,13 +37,13 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #9bd770;
-  --color-cta-card-bg: #d5d2d0;
+  --color-card-bg: light-dark(#858483, #00ff66);
+  --color-cta-card-bg: light-dark(#00ff66, #c9c2c2);
   /* news-cards */
-  --color-news-bg: #dbdad4;
-  --color-news-bg-inverted: #585a5e;
-  --color-cta-newscard-bg: #7e57c2;
-  --color-cta-newscard-bg-inverted: #ffb9f0;
+  --color-news-bg: light-dark(#00ff66, #625e5e);
+  --color-news-bg-inverted: light-dark(#d1cbc9, #00ff66);
+  --color-cta-newscard-bg: light-dark(#3a3a3a, #afa7a7);
+  --color-cta-newscard-bg-inverted: light-dark(#3a3a3a, #c9c2c2);
 
   /* Fonts */
   --font-family-sans: ui-sans-serif;
@@ -63,7 +63,7 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #676161;
-  --color-infobox-1-bg: #cfcec6;
-  --color-infobox-2-bg: #969995;
+  --color-info-bg: light-dark(#d8d8d8, #00ff66);
+  --color-infobox-1-bg: light-dark(#474343, #9c9a9a);
+  --color-infobox-2-bg: light-dark(#474343, #9c9a9a);
 }

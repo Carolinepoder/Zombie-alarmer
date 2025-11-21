@@ -20,12 +20,30 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html"> 
+             <svg
+              width="197"
+              height="188"
+              viewBox="0 0 197 188"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 163.59L2.95613 147.184L74.7729 33.1233L28.7368 16.6712L30.5109 0L119 22.4183L118.086 48.7094L24.387 149.449L99.0994 157.309L96.6453 182.999L0 163.59Z"
+                fill="black"
+              />
+              <path
+                d="M105.556 187.609L85.3425 186.386L109.21 15.753L157.697 13.4002L196.648 172.306L179.029 178.315L161.953 138.635L109.431 150.824L105.556 187.609ZM156.507 125.965L122.097 45.8811L120.504 46.0827L111.467 131.158L156.507 125.965Z"
+                fill="black"
+              />
+            </svg>
+          </a>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
           <li><a class="menuItem" href="register.html">Indberet</a></li>
         </ul>
+         <button class="menuItem" id="toggle">dark mode</button>
         <button class="burger">
           <span class="line"></span>
           <span class="line"></span>
@@ -46,13 +64,14 @@
        <input type="text" id="lokation" name="lokation" placeholder="By, Gade, Adresse..." required/>
 
        <label for="lyd">Hvordan lød zombien?</label>
-       <input id="lyd" name="lyd" required>
-        <option value="">Vælg lyd</option>
+       <select id="lyd" name="lyd" required>
+        <option value="" disabled selected>Vælg lyd</option>
         <option> Bilalarm</option>
         <option> Brandalarm</option>
         <option> Vækkeur</option>
         <option> Sirene</option>
         <option> Andet (beskriv nedenfor)</option>
+        </select>
        
 
        <label for="detaljer">Beskriv zombien (udseende, adfærd, lyd, lydstyrke)</label>
@@ -79,20 +98,19 @@
        </div>
       
 
-       <button type="submit">Indsend rapport</button>
+       <button id="submit" type="submit">Indsend rapport</button>
       </form>
 
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+         
         </article>
         <form id="webform"></form>
       </section>
       <section id="form-summary">
-        <h2>Summary</h2>
+       
         <article>
-          <p class="placeholder">Opsummering</p>
+          <p class="placeholder"></p>
         </article>
       </section>
     </main>
@@ -124,6 +142,6 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
   </body>
 </html>
